@@ -4,7 +4,7 @@ first_name = "Florent"
 
 # 2 - Déclaration d'un nombre entier
 #Déclarer une variable = votre année de naissance
-birth_year = "1994"
+birth_year = 1994
 
 # 3 - Opération basique
 # Calculer en une ligne votre année de naissance en fonction de votre age en 2020
