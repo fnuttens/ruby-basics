@@ -1,3 +1,5 @@
+require "i18n"
+
 ############################
 ## MANIPULATION DE STRING ##
 ############################
@@ -36,6 +38,7 @@ end
 # ex: palindrom_finder("Élu par crapule") => true
 # ex: palindrom_finder("salut les loulous") => false
 def is_palindrome(word)
-  normalized_word = word.downcase.gsub(/\s+/, "")
+  I18n.enforce_available_locales = false
+  normalized_word = I18n.transliterate(word).downcase.gsub(/\s+/, "")
   normalized_word == normalized_word.reverse
 end
